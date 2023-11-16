@@ -15,10 +15,7 @@ const getImage = async () => {
       "size": "256x256",
     }),
   };
-  const res = await fetch(
-    "https://api.openai.com/v1/images/generations",
-    methods
-  );
+  const res = await fetch("https://api.openai.com/v1/images/generations", methods);
   //   pars th response as json
 
   const data = await res.json();
